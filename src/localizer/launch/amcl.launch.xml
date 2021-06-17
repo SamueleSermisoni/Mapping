@@ -1,0 +1,8 @@
+<launch>
+  <arg name="base_frame"  default="scout/base_link"/>
+
+  <node pkg="amcl" type="amcl" name="amcl" output="screen">
+    <param name="base_frame" value="$(arg base_frame)"/>
+    <param name="tf_broadcast" value="true"/>
+  </node>
+</launch>
