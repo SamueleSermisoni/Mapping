@@ -3,7 +3,7 @@
 
 
 
-<node pkg="tf" type="static_transform_publisher" name="world_odom" args="0 0 0 0 0 1 0  odom scout/odom 100"/>
+<node pkg="tf" type="static_transform_publisher" name="world_odom" args="0 0 0 0 0 0 1  odom scout/odom 100"/>
 <node pkg="tf" type="static_transform_publisher" name="base_cam" args="0 0 0 0 0 0 1 scout/base_link camera_odom_frame 100"/>
 <node pkg="tf" type="static_transform_publisher" name="base_laser" args="0 0 0 0 0 0.707 0.707 scout/base_link laser 100"/>
 <node pkg="tf" type="static_transform_publisher" name="world_map" args="0 0 0 0 0 0 1 world map 100"/>
